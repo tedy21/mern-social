@@ -1,0 +1,34 @@
+import React, { Component }  from 'react';
+import Home from "./pages/Home/Home";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
+import Profile from './pages/profile/Profile';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+
+
+function App() { 
+  return (
+     <Router>
+      <Routes>
+          <Route path="/" element={<Home/>} />
+    </Routes>
+
+    <Routes>
+          <Route path="/login" element={<Login/>} />
+    </Routes>
+  
+    <Routes>
+          <Route path="/register" element={<Register/>} />
+    </Routes>
+
+    <Routes>
+          <Route path="/profile/:username" element={<Profile/>} />
+    </Routes>
+
+     </Router>
+  );
+  
+}
+
+export default App;
