@@ -3,6 +3,7 @@ import "./sidebar.css"
 import {Bookmark, HelpOutline, PlayCircleFilledOutlined, RssFeed, School, WorkOutline,Event,Group, ChatBubbleOutlineOutlined} from "@mui/icons-material"
 import { Users } from '../../dummyData'
 import CloseFriend from "../closeFriend/CloseFriend";
+
 export default function Sidebar() {
   return (
     <div className='sidebar'>
